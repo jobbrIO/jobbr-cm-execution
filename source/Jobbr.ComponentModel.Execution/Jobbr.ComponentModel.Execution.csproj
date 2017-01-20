@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IJobExecutor.cs" />
+    <Compile Include="IJobPlanningService.cs" />
+    <Compile Include="IJobRunProgressMonitor.cs" />
+    <Compile Include="Model\PlannedJobRun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

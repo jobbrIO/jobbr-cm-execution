@@ -43,7 +43,8 @@
   <ItemGroup>
     <Compile Include="IJobExecutor.cs" />
     <Compile Include="IJobRunInformationService.cs" />
-    <Compile Include="IJobRunProgressMonitor.cs" />
+    <Compile Include="IJobRunProgressChannel.cs" />
+    <Compile Include="Model\JobRunStates.cs" />
     <Compile Include="Model\JobRunInfo.cs" />
     <Compile Include="Model\PlannedJobRun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

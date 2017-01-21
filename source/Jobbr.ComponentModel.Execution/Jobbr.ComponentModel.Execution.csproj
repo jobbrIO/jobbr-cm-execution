@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F3083433-365E-4A70-A76F-78F27AEFB7B4}</ProjectGuid>
+    <ProjectGuid>{60E632D9-B2BE-4701-991E-C7113689FBF0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Jobbr.ComponentModel.Execution</RootNamespace>
@@ -42,8 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IJobExecutor.cs" />
-    <Compile Include="IJobPlanningService.cs" />
+    <Compile Include="IJobRunInformationService.cs" />
     <Compile Include="IJobRunProgressMonitor.cs" />
+    <Compile Include="Model\JobRunInfo.cs" />
     <Compile Include="Model\PlannedJobRun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

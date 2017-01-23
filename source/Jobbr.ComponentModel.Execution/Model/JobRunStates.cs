@@ -3,6 +3,11 @@
     public enum JobRunStates
     {
         /// <summary>
+        /// No information
+        /// </summary>
+        Null,
+
+        /// <summary>
         /// The JobStarter has created a enviornment for the Job and copies a related files/data to the working directory
         /// </summary>
         Preparing,
@@ -50,6 +55,6 @@
         /// <summary>
         /// The job failed.
         /// </summary>
-        Failed
+        Failed,
     }
 }

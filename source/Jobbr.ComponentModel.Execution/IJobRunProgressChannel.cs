@@ -14,6 +14,7 @@ namespace Jobbr.ComponentModel.Execution
 
         void PublishProgressUpdate(JobRunInfo jobRunInfo, double progress);
 
+        // TODO: Rename
         void PublicArtefact(Guid uniqueId, string fileName, Stream result);
     }
 }

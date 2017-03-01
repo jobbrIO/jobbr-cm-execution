@@ -24,7 +24,6 @@ build:
   project: source/Jobbr.ComponentModel.Execution.sln
 
 after_build:
-  - cmd: ECHO nuget pack source\Jobbr.ComponentModel.Execution.nuspec -version "%GitVersion_NuGetVersion%" -prop "target=%CONFIGURATION%"
   - cmd: nuget pack source\Jobbr.ComponentModel.Execution.nuspec -version "%GitVersion_NuGetVersion%" -prop "target=%CONFIGURATION%"
   - cmd: appveyor PushArtifact "Jobbr.ComponentModel.Execution.%GitVersion_NuGetVersion%.nupkg"
 

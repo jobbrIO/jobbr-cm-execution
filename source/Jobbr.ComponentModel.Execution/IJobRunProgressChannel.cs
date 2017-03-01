@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using Jobbr.ComponentModel.Execution.Model;
 
 namespace Jobbr.ComponentModel.Execution
@@ -10,7 +9,6 @@ namespace Jobbr.ComponentModel.Execution
 
         void PublishProgressUpdate(JobRunInfo jobRunInfo, double progress);
 
-        // TODO: Rename
-        void PublicArtefact(Guid uniqueId, string fileName, Stream result);
+        void PublishArtefact(long id, string fileName, Stream result);
     }
 }

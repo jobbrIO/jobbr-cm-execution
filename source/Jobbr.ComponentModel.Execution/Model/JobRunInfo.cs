@@ -12,9 +12,7 @@ namespace Jobbr.ComponentModel.Execution.Model
         public string UniqueName { get; set; }
         public long? UserId { get; set; }
         public string Username { get; set; }
-
         public string JobParameters { get; set; }
-
         public string InstanceParameters { get; set; }
     }
 }

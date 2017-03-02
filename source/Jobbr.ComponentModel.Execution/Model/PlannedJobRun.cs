@@ -4,7 +4,7 @@ namespace Jobbr.ComponentModel.Execution.Model
 {
     public class PlannedJobRun
     {
-        public long UniqueId { get; set; }
+        public long Id { get; set; }
 
         public DateTime PlannedStartDateTimeUtc { get; set; }
     }

@@ -13,7 +13,7 @@ namespace Jobbr.ComponentModel.Execution
 
         void OnPlanChanged(List<PlannedJobRun> newPlan);
 
-        bool OnJobRunCanceled(Guid uniqueId);
+        bool OnJobRunCanceled(long id);
 
         void Stop();
     }

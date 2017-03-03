@@ -4,15 +4,15 @@ using Jobbr.ComponentModel.Execution.Model;
 namespace Jobbr.ComponentModel.Execution
 {
     /// <summary>
-    /// IJobRunProgressChannel is implemented by the Server. Job Executors report progress
-    /// of jobs via this interface to the server.
+    /// IJobRunProgressChannel is implemented by Jobbr.Server. Job Executors report progress
+    /// of jobs via this interface to the Server.
     /// </summary>
     public interface IJobRunProgressChannel
     {
-        void PublishStatusUpdate(JobRunInfo jobRunInfo, JobRunStates state);
+        void PublishStatusUpdate(long jobRunId, JobRunStates state);
 
-        void PublishProgressUpdate(JobRunInfo jobRunInfo, double progress);
+        void PublishProgressUpdate(long jobRunId, double progress);
 
-        void PublishArtefact(long id, string fileName, Stream result);
+        void PublishArtefact(long jobRunId, string fileName, Stream content);
     }
 }

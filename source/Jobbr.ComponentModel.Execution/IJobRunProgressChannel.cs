@@ -14,5 +14,7 @@ namespace Jobbr.ComponentModel.Execution
         void PublishProgressUpdate(long jobRunId, double progress);
 
         void PublishArtefact(long jobRunId, string fileName, Stream content);
+
+        void PublishPid(long jobRunId, int pid, string host);
     }
 }

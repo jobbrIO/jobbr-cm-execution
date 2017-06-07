@@ -61,5 +61,15 @@
         /// The job failed.
         /// </summary>
         Failed = 11,
+
+        /// <summary>
+        /// The JobRun has ben deleted in advance
+        /// </summary>
+        Deleted = 12,
+
+        /// <summary>
+        /// The JobRun has been omitted. Eg job has been scheduled, Jobserver stopped (before the jobrun is executed) and After PlannedStartDateTime started again -> JobRun won't be started in that case but set to Omitted.
+        /// </summary>
+        Omitted = 13
     }
 }

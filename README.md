@@ -1,3 +1,7 @@
+> [!IMPORTANT]  
+> This repository is obsolete.  
+> Development of Jobbr has been moved to the [jobbr mono-repo](https://github.com/jobbrIO/jobbr).
+
 # Jobbr ComponentModel Execution [![Build status](https://img.shields.io/appveyor/ci/Jobbr/jobbr-cm-execution/develop.svg?label=develop)](https://ci.appveyor.com/project/Jobbr/jobbr-cm-execution)
 
 This Repository contains specifications, aka. Component Models for implementing additional **Job Executors** for [Jobbr](https://www.jobbr.io).
